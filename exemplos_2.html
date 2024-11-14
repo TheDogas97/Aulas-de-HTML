@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Exemplos 2</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <h1>Bloco 1</h1>
+            <p>teste</p>
+        </div>
+        <div class="container">
+            <h1>Bloco 2</h1>
+            <p>teste</p>
+        </div>
+        <div class="container">
+            <h1>Bloco 3</h1>
+            <p>teste</p>
+        </div>
+    </body>
+
+</html>
+
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 25px;
+        border: solid black 1px;
+    }
+
+    .container h1 {
+        width: 50vw;
+        padding: 10px;
+        margin-bottom: 25px;
+        text-align: center;
+        background-color: lightblue;
+        border: solid black 1px;
+    }
+
+    .container p {
+        width: 100%;
+        border: solid black 1px;
+    }
+</style>

@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.produto {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.produto-img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+.preco {
+  font-size: 24px;
+  color: #28a745;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  font-size: 18px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
