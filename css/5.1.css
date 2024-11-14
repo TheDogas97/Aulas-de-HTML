@@ -1,0 +1,32 @@
+.corpo {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  margin: 0;
+}
+
+table {
+  margin: 0 auto;
+  width: 350px;
+  background-color: black;
+  color: green;
+}
+
+thead {
+  background-color: green;
+  color: black;
+}
+
+tfoot {
+  background-color: orange;
+  color: white;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

@@ -3,3 +3,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+#home-container {
+  background-color: cyan;
+  padding: 10px;
+  width: 70%;
+  margin: 50px auto;
+}
+
+table {
+  background: lightblue;
+  border-spacing: 10px;
+  text-align: center;
+  width: 100%;
+  border: solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+th:first-child {
+  border-right: solid black;
+}
+
+tr {
+  border-bottom: solid black 1px;
+}
+
+thead th {
+  border-bottom: solid black;
+}
