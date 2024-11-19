@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Tarefa 7.1</title>
+        <link rel="stylesheet"
+              href="../css/7.1.css" />
+    </head>
+
+    <body>
+        <form>
+            <div class="row">
+                <div class="field">
+                    <label for="nome">Nome:</label>
+                    <input type="text"
+                           name="nome"
+                           id="nome" />
+                </div>
+
+                <div class="field">
+                    <label for="apelido">Apelido:</label>
+                    <input type="text"
+                           name="apelido"
+                           id="apelido" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="single-field">
+                    <label for="morada">Morada:</label>
+                    <input type="text"
+                           name="morada"
+                           id="morada" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <label for="codigoPostal">Código Postal:</label>
+                    <input type="text"
+                           name="codigoPostal"
+                           id="codigoPostal"
+                           placeholder="xxxx-xxx" />
+                </div>
+
+                <div class="field">
+                    <label for="localidade">Localidade:</label>
+                    <input type="text"
+                           name="localidade"
+                           id="localidade" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="single-field">
+                    <label for="data">Data:</label>
+                    <input type="date"
+                           name="data"
+                           id="data" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="single-field">
+                    <label for="idade">Idade:</label>
+                    <input type="number"
+                           name="idade"
+                           id="idade" />
+                </div>
+            </div>
+
+            <div class="radio-group">
+                <label for="genero">Género:</label>
+                <label>
+                    <input type="radio"
+                           name="genero"
+                           id="masculino"
+                           value="masculino">
+                    Masculino
+                </label>
+                <label>
+                    <input type="radio"
+                           name="genero"
+                           id="feminino"
+                           value="feminino">
+                    Feminino
+                </label>
+            </div>
+
+            <div class="single-field">
+                <label for="equipamento">Equipamento:</label>
+            </div>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox"
+                           name="equipamento"
+                           id="net"
+                           value="net">
+                    Tem Internet
+                </label>
+                <label>
+                    <input type="checkbox"
+                           name="equipamento"
+                           id="pc"
+                           value="pc">
+                    Tem Computador
+                </label>
+                <label>
+                    <input type="checkbox"
+                           name="equipamento"
+                           id="print"
+                           value="print">
+                    Tem Impressora
+                </label>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+
+</html>
