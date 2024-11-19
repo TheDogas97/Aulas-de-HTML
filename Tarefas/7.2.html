@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Tarefa 7.2</title>
+        <link rel="stylesheet"
+              href="../css/7.2.css">
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                document.getElementById('img').addEventListener('change', function (e) {
+                    const file = e.target.files[0];
+                    if (file) {
+                        const reader = new FileReader();
+                        reader.onload = function (e) {
+                            const preview = document.getElementById('imagePreview');
+                            preview.src = e.target.result;
+                            preview.style.display = 'block';
+                        }
+                        reader.readAsDataURL(file);
+                    }
+                });
+
+                document.getElementById('exemploForm').addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    alert('Formulário enviado com sucesso!');
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <h1>Exemplo de Formulário HTML</h1>
+        <form id="exemploForm">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text"
+                       name="nome"
+                       id="nome" />
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email"
+                       name="email"
+                       id="email" />
+            </div>
+
+            <div class="form-group">
+                <label for="msg">Mensagem:</label>
+                <textarea name="msg"
+                          id="msg"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="img">Selecione uma imagem:</label>
+                <input type="file"
+                       name="img"
+                       id="img">
+                <div>
+                    <img id="imagePreview"
+                         style="display: none;"
+                         alt="Pré-visualização da imagem">
+                </div>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+
+</html>
